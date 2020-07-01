@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <title>Practice Animated Page</title>
 </head>
 <body data-barba="wrapper" >
   <!-- header -->
   <header class="nav-header">
     <!-- logo -->
-    <h1><a href="./index.html"class="logo" id="logo">Life.</a></h1>
+    <h1><a href="../index.html"class="logo" id="logo">Life.</a></h1>
     <!-- double line as nav button -->
     <div class="nav-button">
       <div class="line1"></div>
@@ -20,70 +20,50 @@
   </header>
 
   <!-- main body -->
-  <main data-barba="container" data-barba-namespace="home" >
+  <main data-barba="container" data-barba-namespace="fashion" >
 
-    <!-- 1st section -->
-    <section class="mountain slide">
-      <div class="img-container">
-        <img src="./img/forest.png" alt="forest image">
-        <div class="reveal-img"></div>
-      </div>
-      <div class="desc-container">
-        <div class="title">
-          <h2>
-            Freedom at your <span class="mountain-span">fingertips.</span>
-          </h2>
-          <div class="title-swipe t-swipe1"></div>
-        </div>
+    <!-- section 1 -->
+    <section class="fashion1 detail-slide">
+      <div class="fashion-text">
+        <h1>Luiza Bubzy</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam asperiores ad laboriosam iure rem. Voluptates pariatur quo iusto non deleniti.
         </p>
-        <a href="#" class="explore mountain-exp">Explore</a>
-        <div class="reveal-text"></div>
       </div>
+      <div class="fashion-img">
+        <img src="../img/fashion-img1.png" alt="fashion #1">
+      </div>
+      <div class="fashion-nr"><span>01</span></div>
     </section>
 
-    <!-- 2nd section -->
-    <section class="hike slide">
-      <div class="img-container">
-        <img src="./img/hike.png" alt="hike image">
-        <div class="reveal-img"></div>
-      </div>
-      <div class="desc-container">
-        <div class="title">
-          <h2>
-            Feel your <span class="hike-span">blood boiling</span> exploring nature.
-          </h2>
-          <div class="title-swipe t-swipe2"></div>
-        </div>
+    <!-- section 2 -->
+    <section class="fashion2 detail-slide">
+      <div class="fashion-text">
+        <h1>Luiza Bubzy</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam asperiores ad laboriosam iure rem. Voluptates pariatur quo iusto non deleniti.
         </p>
-        <a href="#" class="explore hike-exp">Explore</a>
-        <div class="reveal-text"></div>
       </div>
+      <div class="fashion-img">
+        <img src="../img/fashion-img2.png" alt="fashion #1">
+      </div>
+      <div class="fashion-nr"><span>02</span></div>
     </section>
 
-    <!-- 3rd section -->
-    <section class="fashion slide">
-      <div class="img-container">
-        <img src="./img/fashion.png" alt="fashion image">
-        <div class="reveal-img"></div>
-      </div>
-      <div class="desc-container">
-        <div class="title">
-          <h2>
-            Freedom at your <span class="fashion-span">fingertips.</span>
-          </h2>
-          <div class="title-swipe t-swipe3"></div>
-        </div>
+    <!-- section 3 -->
+    <section class="fashion3 detail-slide">
+      <div class="fashion-text">
+        <h1>Luiza Bubzy</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam asperiores ad laboriosam iure rem. Voluptates pariatur quo iusto non deleniti.
         </p>
-        <a href="./fashion/index.html" class="explore fashion-exp">Explore</a>
-        <div class="reveal-text"></div>
       </div>
+      <div class="fashion-img">
+        <img src="../img/fashion-img3.png" alt="fashion #1">
+      </div>
+      <div class="fashion-nr"><span>03</span></div>
     </section>
+
   </main>
 
   <!-- nav button content -->
@@ -119,7 +99,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js" integrity="sha256-XBVALc3QsDSQiDtiaBwNZ2rxCJTHzlUhhlDQ84J8bw8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js" integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js" integrity="sha256-XDWrid8aGX+NZwSY7JzTu6oWArI71Sw+aUZ9Hd0P5mo=" crossorigin="anonymous"></script>
-  <script src="app.js"></script>
+  <script src="../app.js"></script>
 
 </body>
 </html>

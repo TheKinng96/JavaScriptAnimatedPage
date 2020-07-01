@@ -26,7 +26,7 @@ function animateSlides() {
       reverse: false
     })
     .setTween(slideT1)
-    .addIndicators({colorStart:'white', colorTrigger:'white', name:'slide'})
+    // .addIndicators({colorStart:'white', colorTrigger:'white', name:'slide'})
     .addTo(controller);
     //new animation
     const pageT1 = gsap.timeline();
@@ -40,7 +40,7 @@ function animateSlides() {
       duration: "100%",
       triggerHook: 0 
     })
-    .addIndicators({colorStart:'white', colorTrigger:'white', name:'page', indent: 200})
+    // .addIndicators({colorStart:'white', colorTrigger:'white', name:'page', indent: 200})
     .setPin(slide, {pushFollowers: false})
     .setTween(pageT1)
     .addTo(controller)
@@ -92,7 +92,46 @@ function navToggle(e){
   }
 }
 
+//barba page
+barba.init({
+  views: [
+    {
+      namespace: 'home',
+      beforeEnter() {
+        animateSlides(); 
+      },
+      beforeLeave() {
+        slideScene.destroy();
+        pageScene.destroy();
+        controller.destroy();
+      }
+    },
+    {
+      namespace: 'fashion'
+    }
+  ],
+  transitions: [
+    {
+      leave({current, next}) {
+        let done = this.async();
+        // animation
+        const tl = gsap.timeline({ defaults: { ease: "power2.inOut" } })
+        tl.fromTo(current.container, 1, {opacity:1}, {opacity:0, onComplete: done});
+      },
+      enter({current, next}) {
+        let done = this.async();
 
+        // scroll to the top
+        window.scrollTo(0,0);
+        //animation
+        const tl = gsap.timeline({ defaults: { ease: "power2.inOut" } })
+        tl.fromTo(next.container, 1, {opacity:0}, {opacity:1, onComplete: done});
+      }
+    }
+  ]
+})
+
+//eventlistener
 navBtn.addEventListener('click',navToggle)
 window.addEventListener('mousemove', cursor)
 window.addEventListener('mouseover', activeCursor)
