@@ -321,6 +321,10 @@ body.hide {
   }
   .img-container{
     padding-top: 2rem;
+    height: 28rem;
+    width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
   }
   .desc-container {
     padding: 0;
@@ -339,6 +343,9 @@ body.hide {
     width: 60%;
     margin: auto;
   }
+  .nav-links {
+    flex-basis: 20rem;
+  }
   /* .cursor {
     display: none;
   } */
@@ -352,5 +359,81 @@ body.hide {
   }
   .fashion-text h1{
     margin: 2rem 0rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .img-container {
+    width: 40rem;
+  }
+  .nav-links {
+    flex-basis: 15rem;
+  }
+  .contact {
+    flex-basis: 20rem;
+  }
+}
+
+@media screen and (max-width: 681px) {
+  .nav-header {
+    padding: 1rem 0;
+  }
+  .img-container {
+    width: 30rem;
+  }
+  .desc-container p {
+    padding: 1rem 1rem;
+  }
+  .nav-links {
+    font-size: 2.2rem;
+  }
+  .contact h2 {
+    font-size: 2.5rem;
+  }
+  .contact p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .nav-bar {
+    flex-direction: column;
+    padding-top: 5rem;
+  }
+  .nav-links h3 {
+    padding: 1rem 0rem;
+  }
+  .nav-links {
+    font-size: 2rem;
+  }
+  .contact {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact h2 {
+    font-size: 2.2rem;
+  }
+  .contact p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 505px) {
+  .img-container {
+    width: 27rem;
+    height: 27rem;
+  }
+}
+
+@media screen and (max-width: 466px) {
+  .img-container {
+    width: 20rem;
+    height: 20rem;
+  }
+  .nav-header {
+    padding: 0rem;
   }
 }
