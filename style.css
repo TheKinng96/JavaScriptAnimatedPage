@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color:#17181a;
+  background-color:white;
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
   position: relative;
@@ -16,7 +16,7 @@ main {
 }
 
 .logo {
-  color: white;
+  color: black;
   font-family: 'Abril Fatface', cursive;
 }
 
@@ -26,7 +26,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: white;
+  color: black;
   width: 90%;
   margin: auto;
   padding: 2rem 0;
@@ -38,7 +38,7 @@ main {
   width: 3rem;
   height: 0.2rem;
   margin: 0.4rem;
-  background: white;
+  background: black;
   pointer-events: none;
 }
 
@@ -49,8 +49,8 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
-  background-color: #17181a;
+  color: black;
+  background-color: white;
 
 }
 
@@ -73,7 +73,7 @@ main {
 .desc-container p {
   padding: 3rem 0rem;
   font-size: 1.5rem;
-  color: rgb(223, 223, 223);
+  color: black;
 }
 
 .img-container {
@@ -104,8 +104,8 @@ main {
   text-decoration: none;
   padding: 1rem 2rem;
   background: none;
-  color: white;
-  border: 1px solid white;
+  color: black;
+  border: 1px solid black;
   font-size: 1rem;
   align-self: flex-start;
   cursor: pointer;
@@ -117,8 +117,8 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgb(216, 216, 216);
-  color: black;
+  background: black;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -159,7 +159,7 @@ main {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #17181a;
+  background: white;
   left: 0;
   top: -15;
 }
@@ -167,7 +167,7 @@ main {
 .cursor {
   width: 3rem;
   height: 3rem;
-  border: 2px solid white;
+  border: 2px solid black;
   border-radius: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -198,7 +198,7 @@ main {
 .title {
   position: relative;
   overflow: hidden;
-  background-color: #17181a;
+  background-color: white;
 }
 .title-swipe {
   width: 100%;
@@ -206,7 +206,7 @@ main {
   top: 0;
   left: 0;
   position: absolute;
-  mix-blend-mode: darken;
+  mix-blend-mode: lighten;
   transform: translateY(100%);
 }
 .t-swipe1 {
@@ -235,7 +235,7 @@ body.hide {
   align-items: center;
   width: 70%;
   margin: auto;
-  color: white;
+  color: black;
   margin-top: 5rem;
   flex-wrap: wrap;
   position: relative;
@@ -284,7 +284,7 @@ body.hide {
   position: absolute;
   left: 50%;
   bottom: 10%;
-  color: white;
+  color: black;
 }
 
 .swipe {
